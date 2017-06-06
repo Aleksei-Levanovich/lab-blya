@@ -1,0 +1,3 @@
+<Collection name="">
+	<Human name="ТЕСТОВЫЙЧЕЛИК" age="100" loc="ПРЯМВОТКАПСОМ"/>
+</Collection>

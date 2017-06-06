@@ -1,0 +1,4 @@
+<Collection name="">
+	<Human name="vasyan" age="0" loc="òîëüÿòòè"/>
+	<Human name="ÒÅÑÒÎÂÛÉ×ÅËÈÊ" age="100" loc="ÏÐßÌÂÎÒÊÀÏÑÎÌ"/>
+</Collection>

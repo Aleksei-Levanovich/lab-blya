@@ -16,19 +16,19 @@ public class SingleAddingListener extends LabListener {
     public void actionPerformed(ActionEvent e) {
         if ((int) getAgeSpinner().getValue() >= 0 && (int) getAgeSpinner().getValue() <= 120) {
             String name = getNameField().getText();
-            if (name.contains("yan") || name.contains("ян")){
+            String loc = getLocField().getText();
+            if ((name.contains("yan") || name.contains("ян")) && getLocField().getText().equals("")==false){
                 String path = "src/music/gopnik.wav";
                 MusicRunnable t1 = new MusicRunnable();
                 t1.path = path;
                 Thread thread = new Thread(t1);
                 thread.start();
             }
-            if (name.equals("yan") || name.contains("ян")){
-                String path = "src/music/gopnik.wav";
+            if (name.equals("anekdot") || name.contains("анекдот")){
+                String path = "src/music/anekdot.wav";
                 MusicRunnable t1 = new MusicRunnable();
                 t1.path = path;
-                Thread thread = new Thread(t1);
-                thread.start();
+                t1.run();
             }
             if (Pattern.compile("[A-zА-я']+").matcher(getNameField().getText()).matches()) {
                 if (Pattern.compile("[A-zА-я0-9\\-_]+").matcher(getLocField().getText()).matches()) {
